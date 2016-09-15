@@ -8,12 +8,7 @@ namespace Landscape
 	{
 		public App()
 		{
-			var content = new MyContentPage();
-
-			var page = new NavigationPage(content);
-			page.BarTextColor = Color.Aqua;
-
-			MainPage = page;
+			MainPage = new MyContentPage();
 			MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.Lime);
 			MainPage.SetValue(NavigationPage.BarTextColorProperty, Color.Red);
 		}
