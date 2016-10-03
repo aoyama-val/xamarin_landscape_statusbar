@@ -16,6 +16,10 @@ namespace Landscape.iOS
 
 			LoadApplication(new App());
 
+			//UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
+			UIApplication.SharedApplication.SetStatusBarHidden(true, UIStatusBarAnimation.None);
+			UIApplication.SharedApplication.SetStatusBarHidden(false, UIStatusBarAnimation.None);
+
 			return base.FinishedLaunching(app, options);
 		}
 	}
